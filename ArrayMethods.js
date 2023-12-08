@@ -32,3 +32,7 @@
 // const array = [5, 12, 8, 130, 44];
 // const a = array.findIndex((element) => element > 13); // 3
 // console.log(a);
+
+// Q. what is the use of tostring() and Join() methods in array ?
+// The toString() method returns an array as a comma separated string ✅
+// The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator:✅
