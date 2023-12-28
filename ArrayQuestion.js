@@ -1,10 +1,10 @@
 // -------------------------------------------- if any one value less then 18 . then output false
 // const ages = [32, 33, 16, 40];
-// const data =ages.every(checkAge)
+// const Data =ages.every(checkAge)
 // function checkAge(age) {
 //   return age > 18
 // }
-// console.log(data);
+// console.log(Data);
 
 // ------------------------------------- fill all elements kiwi ?
 // const fruits = ["Banana", "Orange", "Apple", "Mango","amit", "yadav"];
