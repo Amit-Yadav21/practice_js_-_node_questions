@@ -1,57 +1,57 @@
 // -------------------------------------------- if any one value less then 18 . then output false
-// const ages = [32, 33, 16, 40];
-// const Data =ages.every(checkAge)
-// function checkAge(age) {
-//   return age > 18
-// }
+const AGEs = [32, 33, 16, 40];
+const Data =AGEs.every(checkAge)
+function checkAge(age) {
+  return age > 18
+}
 // console.log(Data);
 
 // ------------------------------------- fill all elements kiwi ?
-// const FRUITS = ["Banana", "Orange", "Apple", "Mango","amit", "yadav"];
-// FRUITS.fill("Kiwi");
+const FRUITS = ["Banana", "Orange", "Apple", "Mango","amit", "yadav"];
+FRUITS.fill("Kiwi");
 // console.log(FRUITS); // [ 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi' ]
 
 // --------------------------------- fill index posotion to right side ?
 
-// const Fruits = ["Banana", "Orange", "Apple", "Mango"];
-// Fruits.fill("Kiwi", 2);
+const Fruits = ["Banana", "Orange", "Apple", "Mango"];
+Fruits.fill("Kiwi", 2);
 // console.log(Fruits); // [ 'Banana', 'Orange', 'Kiwi', 'Kiwi' ]
 
 // ---------------------------------- filter age ?
-// const ages = [32, 33, 16, 40];
-// const RESULT = ages.filter(checkAdult);
-// function checkAdult(age) {
-//   return age >= 18;
-// }
+const Ages = [32, 33, 16, 40];
+const RESULT = Ages.filter(checkAdult);
+function checkAdult(age) {
+  return age >= 18;
+}
 // console.log(RESULT); // [ 32, 33, 40 ]
 
 
 // ---------------------------------------- find data in array ?
-// const ages = [3, 10, 18, 20];
-// const checkAge = age => age > 18;
-// const DATA = ages.find(checkAge)
+const AGES = [3, 10, 18, 20];
+const checkAge = age => age > 18;
+const DATA = AGES.find(checkAge)
 // console.log(DATA); // 20
 
 // ------------------------------------------ 
-// const ages = [3, 10, 18, 20];
-// function checkAge(age) {
-//     return age >18;
-// }
-// const data =ages.findIndex(checkAge);
-// console.log(data);
+const ages = [3, 10, 18, 20];
+function checkAge(age) {
+    return age >18;
+}
+const DATAS =ages.findIndex(checkAge);
+// console.log(DATAS);
 
 // --------------------------------------------- 
-// const fruits = ["apple", "orange", "cherry"];
-// let text = "";
-// function myFunction(item, index) {
-//     text += `${index + ": " + item }'\n'`; 
-// }
-// fruits.forEach(myFunction);
+var fruits = ["apple", "orange", "cherry"];
+var text = "";
+function myFunction(item, index) {
+    text += `${index + ": " + item }'\n'`; 
+}
+fruits.forEach(myFunction);
 // console.log(text);
 
 // ----------------------------------------- change array from a string:
-// let text = "ABCDEFGHIJK"
-// const myArr = Array.from(text);
+let TEXT = "ABCDEFGHIJK"
+const myArr = Array.from(TEXT);
 // console.log(myArr);
 
 // =============================================== reverse array without revrse() method ?
@@ -117,9 +117,9 @@ const array5 = ["amit", "kumar", "yadav", 1, 3, 5, 6, true, false, 1.8, 3.5, 0.4
 const floatArr = array5.filter((value) => typeof value === "number" && Number.isFinite(value) && !Number.isInteger(value));
 // console.log("Float values in array: ", floatArr);
 // ------------------------------------------------------
-// a=[2,4.5,7,6,5,0.4,"dygf",6,[7,6,12,"dafag",0.6,"sg",7.6,],62,"fsgw",6,5.6,"wgyw",5]
-// let arr = a.flat().sort((a,b)=>a-b).filter(ele => typeof ele === 'number');
-// console.log(arr)
+a=[2,4.5,7,6,5,0.4,"dygf",6,[7,6,12,"dafag",0.6,"sg",7.6,],62,"fsgw",6,5.6,"wgyw",5]
+let ARR = a.flat().sort((a,b)=>a-b).filter(ele => typeof ele === 'number');
+// console.log(ARR)
 
 // ==============================================================  spread operator ?
 let z = [1,2,3,4,5]
