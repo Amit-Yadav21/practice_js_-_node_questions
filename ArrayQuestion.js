@@ -28,11 +28,9 @@
 
 // ---------------------------------------- find data in array ?
 // const ages = [3, 10, 18, 20];
-// function checkAge(age) {
-//   return age > 18;
-// }
-// const data = ages.find(checkAge)
-// console.log(data);
+// const checkAge = age => age > 18;
+// const DATA = ages.find(checkAge)
+// console.log(DATA); // 20
 
 // ------------------------------------------ 
 // const ages = [3, 10, 18, 20];
