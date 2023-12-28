@@ -7,23 +7,23 @@
 // console.log(Data);
 
 // ------------------------------------- fill all elements kiwi ?
-// const fruits = ["Banana", "Orange", "Apple", "Mango","amit", "yadav"];
-// fruits.fill("Kiwi");
-// console.log(fruits);
+// const FRUITS = ["Banana", "Orange", "Apple", "Mango","amit", "yadav"];
+// FRUITS.fill("Kiwi");
+// console.log(FRUITS); // [ 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi', 'Kiwi' ]
 
 // --------------------------------- fill index posotion to right side ?
 
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.fill("Kiwi", 2);
-// console.log(fruits);
+// const Fruits = ["Banana", "Orange", "Apple", "Mango"];
+// Fruits.fill("Kiwi", 2);
+// console.log(Fruits); // [ 'Banana', 'Orange', 'Kiwi', 'Kiwi' ]
 
 // ---------------------------------- filter age ?
 // const ages = [32, 33, 16, 40];
-// const result = ages.filter(checkAdult);
+// const RESULT = ages.filter(checkAdult);
 // function checkAdult(age) {
 //   return age >= 18;
 // }
-// console.log(result);
+// console.log(RESULT); // [ 32, 33, 40 ]
 
 // ---------------------------------------- find data in array ?
 // const ages = [3, 10, 18, 20];
