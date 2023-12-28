@@ -1,4 +1,4 @@
-factorial = 1
+const factorial = 1
 num = 4
 for (let i=num; i>=1; i--){
     factorial *=i
