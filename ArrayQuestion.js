@@ -25,6 +25,7 @@
 // }
 // console.log(RESULT); // [ 32, 33, 40 ]
 
+
 // ---------------------------------------- find data in array ?
 // const ages = [3, 10, 18, 20];
 // function checkAge(age) {
