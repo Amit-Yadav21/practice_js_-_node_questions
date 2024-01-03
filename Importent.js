@@ -20,7 +20,7 @@
 //     callback(name);
 //   }
 //   outerFunction(callbackFunction);
-
+// --------------------------------------------------------
 // amit()
 // function amit(){
 //     console.log('my name is yadav'); // trun the code 
