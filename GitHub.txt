@@ -1,0 +1,23 @@
+What does the term "GitHub Pages" refer to?
+    A feature for merging changes from one branch to another.
+    A tool for creating and managing pull requests.
+    A feature for hosting and publishing static websites directly from a GitHub repository. ✅
+    A repository's settings page.
+
+What is the purpose of the .gitignore file in a GitHub repository?
+    To list files and directories that should be ignored by version control. ✅
+    To define branch permissions.
+    To store the repository's metadata.
+    To specify the repository's license.
+
+How do you revert a commit in a GitHub repository using Git?
+    git r
+    git commit
+    git revert HEAD ✅
+    git undo commit
+
+What is the command to see the commit history in Git?
+    commits
+    gil show
+    git history
+    git log ✅
