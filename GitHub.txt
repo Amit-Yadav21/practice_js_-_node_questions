@@ -22,7 +22,6 @@ What is the command to see the commit history in Git?
     git history
     git log ✅
 
-
 How do you stage all changes in your local repository for the next commit using Git?
     git stage
     git stage all origin
@@ -41,3 +40,27 @@ What is the purpose of a GitHub repository's README.md file?
     To provide information about the repos including usage instructions. ✅
     To list issues and bugs.
 
+What Git command is used to create a new branch in a GitHub repository?
+    branch
+    git branch branch
+    git checkout -b ✅ 
+    -branch
+    git branch-branch
+
+What Git command is used to create a new branch in a GitHub repository?
+    git branch branch ✅
+    git branch -branch
+    git checkout -b -branch
+    git branch-branch
+
+In GitHub, how do you contribute to a repository by suggesting changes without directly modifying the main branch?
+    Create a new branch and make changes.
+    Use the "Issues" tab to suggest changes.
+    Fork the repository, make changes in the fork, create a pull request. ✅ 
+    Edit files directly in the main branch.
+
+In a GitHub repository, what does the "fork" operation do?
+    Creates a copy of the repository under your GitHub account. ✅ 
+    Deletes the repository.
+    Merges changes from or
+    Submits changes for

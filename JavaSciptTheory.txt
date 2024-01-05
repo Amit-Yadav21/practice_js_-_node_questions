@@ -300,3 +300,29 @@ Q. What does the term "hoisting" refer to in JavaScript?
     b) Moving all JavaScript code to the top of the HTML document
     c)) Declarations are moved to the top of their scope before code execution ✅
     d) Organizing variables in a hierarchical order for better code readability
+
+Q. How is data stored using sessionStorage different from localStorage?
+    sessionStorage data is accessib page session.
+    sessionStorage data persis sessions.
+    localStorage data is acc page session.
+    localStorage data is closed.
+
+Q. What does the null value represent in JavaScript?
+    A special keyword indicates a
+    A placeholder for an objec
+    An undefined value.
+    The absence of any object value. ✅ 
+
+
+Q. Which array method is used to test whether all elements in the array pass the provided function condition?
+    filter
+    map
+    some
+    every ✅ 
+
+Q. What is the purpose of the querySelector method in JavaScript DOM?
+    It selects all child elements of a sp
+    It selects multiple elements wi
+    It selects the first element CSS selector. ✅ 
+    It selects the first element that matches a specific CSS selector. ✅
+    It selects an element
