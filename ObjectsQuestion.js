@@ -1,3 +1,23 @@
+// const obj = {name:'amit', age:24, name:'yadav'}
+// console.log(Object.values(obj));
+
+// const person = { name: 'John', age: 30 };
+// for (let key in person) {
+//     console.log(key + ': ' + person[key]);
+// }
+
+// const person = { name: 'John', age: 30 };
+// const entries = Object.keys(person);
+// console.log(entries); // Output: ['name', 'age']
+
+// const person = { name: 'John', age: 30 };
+// const values = Object.values(person);
+// console.log(values); // Output: ['John', 30]
+
+// const person = { name: 'John', age: 30 };
+// const entries = Object.entries(person);
+// console.log(entries); // Output: [['name', 'John'], ['age', 30]]
+
 // ************************************************* object ?
 var obj = {
 	a: "hello world", // property

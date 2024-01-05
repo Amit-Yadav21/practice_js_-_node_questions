@@ -1,3 +1,25 @@
+// let arr = [1,2,3,4,5];
+// for (let i=0; i<arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// arr.forEach(function(element) {
+//     console.log(element);
+// });
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.toString()); // Prints: 1,2,3,4,5
+// console.log(arr.join(' ')); // Prints: 1 2 3 4 5 (joined with space)
+
+// const numbers = [1, 2, 3, 4, 5];
+// for (let num of numbers) {
+//     console.log(num);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log(...arr); // Prints: 1 2 3 4 5 (separate elements)
+
 // -------------------------------------------- if any one value less then 18 . then output false
 const AGEs = [32, 33, 16, 40];
 const Data = AGEs.every(checkAge)
