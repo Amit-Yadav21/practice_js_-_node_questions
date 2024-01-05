@@ -1,3 +1,54 @@
+Basic Commands:
+1. Initialization and Cloning:
+    git init: Initialize a new Git repository in the current directory.
+    git clone <repository URL>: Clone a remote repository to your local machine.
+2. Staging and Committing:
+    git add <file>: Add file changes to the staging area.
+    git commit -m "Commit message": Commit staged changes to the local repository.
+    git commit -am "Commit message": Add and commit all changes in one command.
+3. Branching and Merging:
+    git branch: List all branches in the repository.
+    git branch <branch_name>: Create a new branch.
+    git checkout <branch_name>: Switch to a different branch.
+    git merge <branch_name>: Merge changes from one branch into the current branch.
+    git branch: List all branches in the local repository.
+    git checkout -b <branch>: Create a new branch and switch to it.
+    git checkout <branch>: Switch to a different branch.
+    git merge <branch>: Merge changes from one branch into another
+4. Remote Repositories:
+    git remote -v: List configured remote repositories.
+    git remote add origin <repository URL>: Add a remote repository as the origin.
+    git push -u origin <branch_name>: Push changes to a remote repository and set the upstream branch.
+    git pull origin <branch_name>: Pull changes from a remote repository to your local branch.
+5. Viewing Changes:
+    git status: Check the status of files in the working directory.
+    git diff: Show changes between commits, the staging area, and the working directory.
+6. Collaboration:
+    git fetch: Fetch changes from a remote repository without merging them.
+    git branch -d <branch>: Delete a branch locally.
+    git push origin --delete <branch>: Delete a remote branch on GitHub.
+
+Advanced Commands:
+1. Undoing Changes:
+    git reset HEAD <file>: Unstage changes for a file.
+    git checkout -- <file>: Discard changes in the working directory for a file.
+    git revert <commit>: Create a new commit that undoes changes made in a specific commit.
+2. Interactive Rebase:
+    git rebase -i <base>: Start an interactive rebase to edit, squash, or reorder commits interactively.
+3. Stashing Changes:
+    git stash: Stash changes in the working directory to a stack.
+    git stash apply: Apply the most recent stash to the working directory.
+    git stash pop: Apply and remove the most recent stash from the stack.
+4. Viewing History and Logs:
+    git log: Show commit logs.
+    git log --oneline: Show condensed commit logs in one line.
+    git blame <file>: Show changes made to a file along with commit details and authors.
+5. Cleaning and Maintenance:
+    git clean -n: Preview files that will be removed by git clean -f.
+    git clean -f: Remove untracked files from the working directory.
+    
+---------------------------------------------------------------------------------------------------------------
+
 What does the term "GitHub Pages" refer to?
     A feature for merging changes from one branch to another.
     A tool for creating and managing pull requests.
