@@ -19,9 +19,7 @@
 // ======================================== Fatch API calls using the fetch() method
 // const fetchAPI = async(URL) => {
 // 	const response = await fetch(URL);
-
 // 	const data = await response.json();
-
 // 	console.log(data)
 // }
 // fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
