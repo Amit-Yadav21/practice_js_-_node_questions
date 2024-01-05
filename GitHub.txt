@@ -21,3 +21,23 @@ What is the command to see the commit history in Git?
     gil show
     git history
     git log ✅
+
+
+How do you stage all changes in your local repository for the next commit using Git?
+    git stage
+    git stage all origin
+    git commit -m "Staging
+    git add. ✅
+
+How do you check the changes in your Git repository?
+    changes
+    git show
+    git status ✅
+    git check statin
+
+What is the purpose of a GitHub repository's README.md file?
+    To store code snippets.
+    To store binary files.
+    To provide information about the repos including usage instructions. ✅
+    To list issues and bugs.
+
