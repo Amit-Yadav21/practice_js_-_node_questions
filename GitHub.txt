@@ -9,13 +9,17 @@ Basic Commands:
 3. Branching and Merging:
     git branch: List all branches in the repository.
     git branch <branch_name>: Create a new branch.
-    git checkout <branch_name>: Switch to a different branch.
-    git merge <branch_name>: Merge changes from one branch into the current branch.
     git branch: List all branches in the local repository.
+    git checkout <branch_name>: Switch to a different branch.
     git checkout -b <branch>: Create a new branch and switch to it.
     git checkout <branch>: Switch to a different branch.
+    git merge <branch_name>: Merge changes from one branch into the current branch.
     git merge <branch>: Merge changes from one branch into another
+    git rebase [branch]: Applies commits from one branch on top of another.
+    git rebase -i [commit]: Interactively rewrites commit history before merging.
+    git cherry-pick [commit-hash]: Picks a specific commit from another branch and applies it to the current branch.
 4. Remote Repositories:
+    git remote: Lists remote repositories.
     git remote -v: List configured remote repositories.
     git remote add origin <repository URL>: Add a remote repository as the origin.
     git push -u origin <branch_name>: Push changes to a remote repository and set the upstream branch.
@@ -25,11 +29,17 @@ Basic Commands:
     git diff: Show changes between commits, the staging area, and the working directory.
 6. Collaboration:
     git fetch: Fetch changes from a remote repository without merging them.
+    git fetch [remote-name]: Retrieves updates from a remote repository.
     git branch -d <branch>: Delete a branch locally.
     git push origin --delete <branch>: Delete a remote branch on GitHub.
+7. Git Configuration:
+    git config: Displays Git configuration settings.
+    git config --global user.name "Your Name": Sets the author name to be used for all commits.
+    git config --global user.email "your_email@example.com": Sets the email for all commits.
 
 Advanced Commands:
 1. Undoing Changes:
+    git reset [file]: Removes changes from the staging area for the specified file.
     git reset HEAD <file>: Unstage changes for a file.
     git checkout -- <file>: Discard changes in the working directory for a file.
     git revert <commit>: Create a new commit that undoes changes made in a specific commit.
@@ -46,7 +56,7 @@ Advanced Commands:
 5. Cleaning and Maintenance:
     git clean -n: Preview files that will be removed by git clean -f.
     git clean -f: Remove untracked files from the working directory.
-    
+
 ---------------------------------------------------------------------------------------------------------------
 
 What does the term "GitHub Pages" refer to?
