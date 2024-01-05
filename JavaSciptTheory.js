@@ -1,14 +1,22 @@
-// Closure ? 
+// =========================== differences between var, let, and const in JavaScript
+// In JavaScript, let, var, and const are used to declare variables. These keywords
+// 1. Scope:
+//     var: Variables declared with var have function-level or global scope. They are hoisted to the top of their function scope.
+//     let and const: Variables declared with let and const have block-level scope, limited to the block in which they are defined, or within nested blocks. They are not hoisted to the top of their block scope.
+// 2. Hoisting:
+//     var Variables declared with var are hoisted to the top of their function scope, allowing them to be used before their actual declaration in the code (though their value will be undefined until assigned).
+//     'let' and 'const' Variables declared with let and const are hoisted to the top of their block scope but are in a "temporal dead zone" until the point where they are declared. Accessing them before their declaration results in a ReferenceError.
+//     'let' variables are not hoisted to the top of their block scope and are in a "temporal dead zone" until their declaration point.
+//     let, const variables are not hoisted and are in a "temporal dead zone" until their declaration point.
+// 3. Reassignment:
+//     var: Variables declared with var can be redeclared and reassigned.
+//     let: Variables declared with let can be reassigned but cannot be redeclared in the same scope.
+//     const: Variables declared with const cannot be reassigned after initialization and should be assigned a value upon declaration. They cannot be redeclared or reassigned to a different value.
+
+// ================================================ Closure ? 
 //  => A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
-// What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
-// => The NaN property represents a value that is “not a number”
-// For one thing, although NaN means “not a number”, its type is, believe it or not, Number:
-// console.log(typeof NaN === "number");  // true
-// Additionally, NaN compared to anything – even itself! – is false:
-// console.log(NaN === NaN);  // false
-
-// Making API calls using the fetch() method
+// ======================================== Fatch API calls using the fetch() method
 // const fetchAPI = async(URL) => {
 // 	const response = await fetch(URL);
 
@@ -17,6 +25,15 @@
 // 	console.log(data)
 // }
 // fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
+
+// =========================================================== Optional Question ?
+
+// What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
+// => The NaN property represents a value that is “not a number”
+// For one thing, although NaN means “not a number”, its type is, believe it or not, Number:
+// console.log(typeof NaN === "number");  // true
+// Additionally, NaN compared to anything – even itself! – is false:
+// console.log(NaN === NaN);  // false
 
 // Q. What does the setTimeout() function do in JavaScript?
 // a)) It schedules the execution of a function after a specified delay (this is the right ans) ✅
