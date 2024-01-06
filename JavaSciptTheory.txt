@@ -131,14 +131,19 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
     Functions in JavaScript can be defined using the function keyword, and they can be either named or anonymous. 
     They can take input parameters (arguments) and can optionally return a value.
 
+================================================ Types of functions ?
+1. Named Functions:-
+    Functions with a name identifier that can be called by that name.
     // Named function definition
     function greet(name) {
         return `Hello, ${name}!`;
     }
-    // Calling the function
+    // Calling the named function
     let greeting = greet('John');
     console.log(greeting); // Output: Hello, John!
 
+2. Anonymous Functions:-
+    Functions defined without a name, often assigned to a variable or used as callbacks.
     // Anonymous function assigned to a variable
     let add = function(a, b) {
         return a + b;
@@ -146,6 +151,76 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
     // Using the anonymous function
     let result = add(3, 5);
     console.log(result); // Output: 8
+
+3. Arrow Functions (Introduced in ES6):
+    A concise way to write functions, especially for short functions.
+    // Arrow function syntax
+    let multiply = (a, b) => a * b;
+    let product = multiply(4, 6);
+    console.log(product); // Output: 24
+
+4. Immediately Invoked Function Expressions (IIFE):-
+    Functions that are declared and immediately executed.
+    Useful for creating a separate scope and avoiding polluting the global namespace.
+    // IIFE example
+    (function() {
+        console.log('This is an IIFE');
+    })();
+
+5. Higher-Order Functions:-
+    Functions that take other functions as arguments or return functions.
+    A function that accepts an argument that is passed to another function. It is called a higher order function.
+    // Higher-order function example
+    function operateOnNumber(num, operation) {
+        return operation(num);
+    }
+
+    function double(num) {
+        return num * 2;
+    }
+    let result = operateOnNumber(5, double); // Using double as a callback function
+
+6. Callback Function:-
+    A callback function is a function passed into another function as an argument. 
+    // Collback Function Example 
+    Const x = () =>{
+	console.log( “ths my function x”)
+    }
+
+    Const y = (cb) =>{
+        console.log(“this my function y”);
+        cb()
+    }
+    y(x);
+
+7. Constructor Functions:-
+    Functions used with the new keyword to create instances of objects.
+    // Constructor function example
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    let person1 = new Person('Alice', 30);
+
+8. Generator Functions (Introduced in ES6):-
+    Functions that can pause their execution and return multiple values over time.
+    // Generator function example
+    function* generatorFunction() {
+        yield 1;
+        yield 2;
+        yield 3;
+    }
+
+    let generator = generatorFunction();
+    console.log(generator.next().value); // Output: 1
+    console.log(generator.next().value); // Output: 2
+
+====================================================== what is JSON ?
+    JSON (JavaScript Object Notation) is a lightweight data-interchange format .
+    JSON is language-independent, but it originates from JavaScript and shares similar syntax with JavaScript object literal notation.
+    Objects: A collection of key-value pairs enclosed in curly braces {}. 
+    Keys must be strings, and values can be strings, numbers, objects, arrays, booleans, or null.
 
 ================================================ Closure ? 
 => A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
