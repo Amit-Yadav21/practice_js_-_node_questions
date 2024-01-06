@@ -125,7 +125,28 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
     join(): Joins all elements of an array into a string.
     toString(), toLocaleString(): Returns a string representing the array.
     fill(): Fills all elements of an array with a static value.
-    
+
+================================ what is Function ?
+    In JavaScript, a function is a block of reusable code designed to perform a specific task or calculation .
+    Functions in JavaScript can be defined using the function keyword, and they can be either named or anonymous. 
+    They can take input parameters (arguments) and can optionally return a value.
+
+    // Named function definition
+    function greet(name) {
+        return `Hello, ${name}!`;
+    }
+    // Calling the function
+    let greeting = greet('John');
+    console.log(greeting); // Output: Hello, John!
+
+    // Anonymous function assigned to a variable
+    let add = function(a, b) {
+        return a + b;
+    };
+    // Using the anonymous function
+    let result = add(3, 5);
+    console.log(result); // Output: 8
+
 ================================================ Closure ? 
 => A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
