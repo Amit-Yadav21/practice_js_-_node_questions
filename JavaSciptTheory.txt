@@ -96,6 +96,7 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
     Arrays in JavaScript can contain elements of any data type, including numbers, strings, booleans, objects, functions, other arrays, and even a mix of these types. 
     JavaScript arrays are dynamic, meaning their size can grow or shrink dynamically as elements are added or removed.
     Arrays are created using square brackets [] and elements are separated by commas.
+    Arrays: An ordered list of values enclosed in square brackets []. Values can be strings, numbers, objects, arrays, booleans, or null.
 
 ================================================ array methods ?
 1. Mutator Methods (modify the original array):
@@ -219,11 +220,18 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
 ====================================================== what is JSON ?
     JSON (JavaScript Object Notation) is a lightweight data-interchange format .
     JSON is language-independent, but it originates from JavaScript and shares similar syntax with JavaScript object literal notation.
-    Objects: A collection of key-value pairs enclosed in curly braces {}. 
+    Objects:-> A collection of key-value pairs enclosed in curly braces {}. 
     Keys must be strings, and values can be strings, numbers, objects, arrays, booleans, or null.
 
+================================== Defference between object and JSON ?
+    In JavaScript objects, keys can be unquoted or single-quoted, and string values don't necessarily need double quotes around them. 
+    However, in JSON, keys and strings must be double-quoted.
+    JSON syntax is a subset of JavaScript object literal notation, but in JSON, keys must be in double quotes and strings must be double-quoted as well, 
+    whereas JavaScript objects allow for more flexibility in key naming and string representation.
+    
 ================================================ Closure ? 
-=> A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
+    A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. 
+    The closure has access to variables in three scopes; specifically: (1) variable in its own scope, (2) variables in the enclosing function’s scope, and (3) global variables.
 
 ======================================== Fatch API calls using the fetch() method
 const fetchAPI = async(URL) => {
