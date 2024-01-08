@@ -493,6 +493,62 @@ const fetchAPI = async(URL) => {
 }
 fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
 
+======================================= What is IndexedDB in js ?
+    IndexedDB is a low-level JavaScript API for storing large amounts of structured data (including files/blobs) in the browser, persistently. 
+    It provides a way for web applications to create, read, write, query, and delete data within the user's browser.
+
+===================================== What is web storage ?
+
+    Web Storage in web browsers provides a simple key-value storage mechanism that allows web applications to store data locally within the user's browser.
+    There are two types of Web Storage:->
+    1. localStorage:
+        localStorage stores data without an expiration date. The data persists even after the browser is closed and reopened, as long as it is not cleared manually or by the application.
+        It has a larger storage capacity compared to sessionStorage.
+        Data stored in localStorage is specific to the protocol (HTTP or HTTPS) and the domain.
+    2. sessionStorage:
+        sessionStorage stores data for a single session only. The data is cleared when the browser tab or window is closed.
+        Each sessionStorage object is unique to the specific tab or window where it's created. Data stored in one tab/window won't be accessible in another tab/window.
+        Like localStorage, data in sessionStorage is specific to the protocol (HTTP or HTTPS) and the domain.
+
+    Methods for both localStorage and sessionStorage:->
+    1. setItem(key, value):
+        Adds or updates a key-value pair in the storage. If the key already exists, the value is updated.
+        localStorage.setItem('key', 'value');
+    2. getItem(key):
+        Retrieves the value associated with the specified key from the storage.
+        const value = localStorage.getItem('key');
+    3. removeItem(key):
+        Removes the specified key and its associated value from the storage.
+        localStorage.removeItem('key');
+    4. clear():
+        Clears all key-value pairs from the storage, effectively emptying it.
+        localStorage.clear();
+
+    Additional Methods for both localStorage and sessionStorage (not as commonly used):
+    1. key(index):
+        Retrieves the key at the specified numeric index in the storage.
+        const firstKey = localStorage.key(0); // Retrieves the first key in the storage
+    2. length:
+        Property that returns the number of key-value pairs stored in the storage.
+        const numberOfItems = localStorage.length; // Returns the number of items stored in localStorage
+
+    Differences between localStorage and sessionStorage :->
+    Scope :->
+        Data stored in localStorage is scoped to the protocol (HTTP or HTTPS) and the domain. This means that data stored by one website/domain cannot be accessed by another website/domain.
+        sessionStorage is scoped to a particular session or tab/window within a browser. Data stored in sessionStorage is not shared between different tabs/windows or across browser sessions. 
+    Lifespan:->
+        Data stored in localStorage remains until explicitly cleared by the web application or the user.
+        Data stored in sessionStorage is cleared when the specific browser tab or window is closed. It persists only for the duration of that session.
+    Expiration:->
+        The data stored in localStorage persists indefinitely until it is cleared either by the user or the web application.
+        Data stored in sessionStorage is cleared when the tab or window is closed. It persists only for the duration of that particular session.
+    Storage Limit:->
+        It has a larger storage capacity compared to sessionStorage. Typically, it allows around 5MB of data per domain, but the actual limit can vary between browsers.
+        It has a similar storage capacity as localStorage, but the data is isolated to the specific tab or window where it's used.
+    Usage:->
+        It's commonly used to store user preferences, cached data, or any data that needs to persist across browser sessions.
+        It's often used to store temporary session-related data, such as shopping cart information or data needed only for a particular browsing session.
+
 // =========================================================== Optional Question ?
 
 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
