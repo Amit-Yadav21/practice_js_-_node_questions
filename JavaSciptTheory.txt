@@ -301,7 +301,7 @@ Note: Slice method won't mutate the original array but it returns the subset as 
 
 Note :- These methods are commonly used for data serialization (conversion of data into a string format) and deserialization (conversion of a string format back into its original data type) when working with JSON data in JavaScript.
 
-======================= What is the difference between Call, Apply and Bind ?
+============================================= What is the difference between Call, Apply and Bind ?
 The difference between Call, Apply and Bind can be explained with below examples,
 1. Call: The call() method invokes a function with a given this value and arguments provided one by one
     var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -337,6 +337,149 @@ The difference between Call, Apply and Bind can be explained with below examples
     var inviteEmployee2 = invite.bind(employee2);
     inviteEmployee1("Hello", "How are you?"); // Hello John Rodson, How are you?
     inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
+
+===================================== What is a first class function ?
+    In Javascript, functions are first class objects. 
+    First-class functions means when functions in that language are treated like any other variable.
+    a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. 
+    
+    For example, in the below example, handler functions assigned to a listener
+    const handler = () => console.log("This is a click handler function");
+    document.addEventListener("click", handler);
+
+===================================================== What is a first order function ?
+    First-order function is a function that doesn’t accept another function as an argument and doesn’t return a function as its return value.
+    const firstOrder = () => console.log("I am a first order function!");
+
+====================================================== What is a unary function ?
+    a unary function refers to a function that takes only one argument. Specifically in JavaScript, 
+    a unary function is a function that operates on a single operand or argument.
+    Unary functions are commonly used in functional programming .
+
+    // Unary function example
+    function square(num) {
+        return num * num;
+    }
+    console.log(square(5)); // Output: 25
+
+============================================== What is the Temporal Dead Zone(TDZ) ?
+    The Temporal Dead Zone is a behavior in JavaScript that occurs when declaring a variable with the let and const keywords, but not with var. 
+    In ECMAScript 6, accessing a let or const variable before its declaration (within its scope) causes a ReferenceError .
+    function somemethod() {
+    console.log(counter1); // undefined
+    console.log(counter2); // ReferenceError
+    console.log(counter3); // ReferenceError
+    var counter1 = 1;
+    let counter2 = 2;
+    const counter3 = 3;
+    }
+    somemethod()
+
+========================================= How do you decode or encode a URL in JavaScript?
+In JavaScript, you can use the encodeURIComponent() and decodeURIComponent() functions to encode and decode URLs, respectively.
+1. Encoding a URL:-
+    The encodeURIComponent() function is used to encode a URL component by replacing special characters with their UTF-8 encoding, making it safe for use in a URL.
+    
+    const originalUrl = 'https://example.com/some path?with=query#fragment';
+    const encodedUrl = encodeURIComponent(originalUrl);
+    console.log(encodedUrl);
+    // Output: 'https%3A%2F%2Fexample.com%2Fsome%20path%3Fwith%3Dquery%23fragment'
+
+2. Decoding a URL:-
+    The decodeURIComponent() function is used to decode a URL component that has been previously encoded using encodeURIComponent().
+    
+    const encodedUrl = 'https%3A%2F%2Fexample.com%2Fsome%20path%3Fwith%3Dquery%23fragment';
+    const decodedUrl = decodeURIComponent(encodedUrl);
+    console.log(decodedUrl);
+    // Output: 'https://example.com/some path?with=query#fragment'
+
+========================================== What is Hoisting ?
+    Hoisting in JavaScript is a behavior where variable and function declarations are moved to the top of their containing scope during the compilation phase, before the actual code execution.
+    a) Hoisting with Variables (var):
+    When using var to declare variables, they are hoisted to the top of their scope. 
+    They are initialized with the value undefined by default if no initial value is assigned during the declaration.
+
+    console.log(myVar); // Output: undefined
+    var myVar = 10;
+
+    var myVar;
+    console.log(myVar); // Output: undefined
+    myVar = 10;
+
+    b) Hoisting with Functions:
+    Function declarations are also hoisted in JavaScript. This means that function declarations are fully hoisted, including both the function name and its body.
+
+    sayHello(); // Output: "Hello, there!"
+    function sayHello() {
+        console.log("Hello, there!");
+    }
+    Note :-...........
+    function expressions (where a function is assigned to a variable) are not hoisted in the same way as function declarations. 
+    Only the variable declaration gets hoisted, not the function initialization.
+
+    sayHello(); // Throws a TypeError: sayHello is not a function
+    var sayHello = function() {
+        console.log("Hello, there!");
+    };
+
+================================= What are classes in ES6 ?
+1. Class Declarations:
+    Classes can be declared using the class keyword followed by the class name.
+    class Person {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        greet() {
+            return `Hello, my name is ${this.name} and I'm ${this.age} years old.`;
+        }
+    }
+
+2. Constructor Method:
+    The constructor method is a special method used for initializing objects when a class is instantiated with the new keyword. It is called automatically upon object creation.
+3. Class Methods:
+    Methods can be added to a class without using the function keyword. These methods define behaviors that instances of the class will have.
+4. Class Inheritance:
+    Classes can inherit properties and methods from other classes using the extends keyword. This enables the creation of a hierarchy of classes.
+    class Student extends Person {
+        constructor(name, age, grade) {
+            super(name, age); // Calls the parent class constructor
+            this.grade = grade;
+        }
+
+        study() {
+            return `${this.name} is studying hard!`;
+        }
+    }
+
+5. Static Methods:
+    Static methods are defined on the class itself rather than on the prototype. They can be called directly on the class without needing an instance of the class.
+    class Calculator {
+        static add(a, b) {
+            return a + b;
+        }
+    }
+    Calculator.add(5, 3); // Output: 8
+
+================================ What are the modules ?
+    JavaScript introduced native support for modules using the import and export keywords, 
+    enabling developers to define modules and control the visibility of code within those modules.
+1. Exporting from a module:-
+    The export keyword is used to export functions, variables, or classes from a module, making them accessible to other modules.
+    
+    // Exporting individual functions, variables, or classes
+    export function add(a, b) {
+        return a + b;
+    }
+    export const PI = 3.1416;
+2. Importing into a module:-
+    The import keyword is used to import specific functionalities from other modules into the current module.
+
+    // Importing individual functionalities
+    import { add, PI } from './mathFunctions.js';
+    console.log(add(5, 3)); // Output: 8
+    console.log(PI); // Output: 3.1416
 
 ================================================ Closure ? 
     A closure is an inner function that has access to the variables in the outer (enclosing) function’s scope chain. 
