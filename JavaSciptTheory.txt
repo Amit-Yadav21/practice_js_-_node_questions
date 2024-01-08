@@ -549,6 +549,8 @@ fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
         It's commonly used to store user preferences, cached data, or any data that needs to persist across browser sessions.
         It's often used to store temporary session-related data, such as shopping cart information or data needed only for a particular browsing session.
 
+========================================================== 
+
 // =========================================================== Optional Question ?
 
 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
