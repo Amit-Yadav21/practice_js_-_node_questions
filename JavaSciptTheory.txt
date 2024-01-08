@@ -498,8 +498,8 @@ fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
     It provides a way for web applications to create, read, write, query, and delete data within the user's browser.
 
 ===================================== What is web storage ?
-
     Web Storage in web browsers provides a simple key-value storage mechanism that allows web applications to store data locally within the user's browser.
+    
     There are two types of Web Storage:->
     1. localStorage:
         localStorage stores data without an expiration date. The data persists even after the browser is closed and reopened, as long as it is not cleared manually or by the application.
@@ -548,6 +548,7 @@ fetchAPI("https://jsonplaceholder.typicode.com/todos/1")
     Usage:->
         It's commonly used to store user preferences, cached data, or any data that needs to persist across browser sessions.
         It's often used to store temporary session-related data, such as shopping cart information or data needed only for a particular browsing session.
+
 
 ========================================================== 
 
