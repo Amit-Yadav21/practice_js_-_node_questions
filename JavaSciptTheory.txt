@@ -893,3 +893,4 @@ Q. What is the purpose of the querySelector method in JavaScript DOM?
     It selects the first element CSS selector. ✅ 
     It selects the first element that matches a specific CSS selector. ✅
     It selects an element
+    
