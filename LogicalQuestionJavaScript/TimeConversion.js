@@ -26,3 +26,40 @@ function Time_Convert(num) {
     return hours + ":" + minutes;
 }
 // console.log(Time_Convert(126)); // Output: 2:6
+
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let decimalPart = result - Math.floor(result);
+// console.log(decimalPart);
+
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let convert = result.toString()
+// let afterDecimal = convert[convert.length -1] 
+// console.log(afterDecimal);
+
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let decimalPart = result % 1;
+// console.log(decimalPart);
+
+// last number ?
+// let num =123
+// let last = num.toString().split('').pop();
+// console.log(last);
+
+// let number = 12345;
+// let lastDigit = number % 10;
+// console.log(lastDigit);
+
+// let number = 12345;
+// let lastDigit = parseInt(number.toString().slice(-1));
+// console.log(lastDigit);
+
+// let number = 12345;
+// let lastDigit = Math.abs(number) % 10;
+// console.log(lastDigit);
+
