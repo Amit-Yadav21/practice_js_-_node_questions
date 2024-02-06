@@ -63,3 +63,12 @@ function Time_Convert(num) {
 // let lastDigit = Math.abs(number) % 10;
 // console.log(lastDigit);
 
+// function reverse(a) {
+//     let reversedString = Math.abs(a).toString().split('').reverse().join(',');
+
+//     if (a < 0) {
+//         reversedString = '-' + reversedString;
+//     }
+//     console.log(reversedString);
+// }
+// reverse(-123)
