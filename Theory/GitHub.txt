@@ -125,3 +125,53 @@ In a GitHub repository, what does the "fork" operation do?
     Deletes the repository.
     Merges changes from or
     Submits changes for
+
+/**********How to create repo using termoinal*********************/
+youtub video link :- https://www.youtube.com/watch?v=8Iljd2rZEIA&ab_channel=ThapaTechnical
+1. Got to the GitHub CLI website Download for window (https://cli.github.com/)
+2. gh auth login
+    ? What account do you want to log into? [Use arrows to move, type to filter]
+        GitHub.com (✔)
+        GitHub Enterprise Server
+    ? What account do you want to log into? GitHub.com
+3. ? You're already logged into github.com. Do you want to re-authenticate? (y/N)
+    ? You're already logged into github.com. Do you want to re-authenticate? Yes
+4. ? What is your preferred protocol for Git operations? [Use arrows to move, type to filter]
+        HTTPS (✔)
+        SSH
+    ? What is your preferred protocol for Git operations? HTTPS 
+    ? Authenticate Git with your GitHub credentials? Yes
+5. ? How would you like to authenticate GitHub CLI? [Use arrons to nove, type to filter]
+        Login with a web browser (✔)
+        Paste an authentication token
+    ! First copy your one-time code: 3116-BE33 Press Enter to open github.com in your browser... 
+    (copy one-time code,paist and continue after click Authries guthub) 
+6.  git init
+    git add .
+    git commit -m"massege"
+7. gh repo new
+    ? What would you like to do? [Use arrows to move, type to filter] 
+        Create a new repository on GitHub from scratch
+        Push an existing local repository to GitHub (✔)
+    ? What would you like to do? Push an existing local repository to GitHub
+    ? Path to local repository(.).
+
+    ? Path to local repository
+    ? Repository name (API) repo_name
+
+    ? Repository name repo_name
+    ? Description (API) ......
+
+    ? Description testing .........
+    ? Visibility [Use arraws to move, type to filter]
+        Public 
+        Private
+        Internal
+
+    ✓ Created repository thapatechnical/thapaapitesting on GitHub
+    ? Add a remote? Yes
+    ? What should the new remote be called? (origin)
+
+    ? What should the new remote be called? origin
+    ✔ Added remote https://github.com/thapatechnical/thapaapitesting.git
+    ? Would you like to push commits from the current branch to "origin"? Yes
