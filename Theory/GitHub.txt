@@ -128,7 +128,7 @@ In a GitHub repository, what does the "fork" operation do?
 
 /**********How to create repo using termoinal*********************/
 youtub video link :- https://www.youtube.com/watch?v=8Iljd2rZEIA&ab_channel=ThapaTechnical
-1. Got to the GitHub CLI website Download for window (https://cli.github.com/)
+1. Got to the GitHub CLI website Download for window/Ubuntu (https://cli.github.com/)
 2. gh auth login
     ? What account do you want to log into? [Use arrows to move, type to filter]
         GitHub.com (✔)
