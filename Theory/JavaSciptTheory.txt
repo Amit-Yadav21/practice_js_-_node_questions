@@ -1,3 +1,17 @@
+========================= what is javascript ? what is  the role of JS Engine ?
+- Js is a progarmming language that is used for converting  static web-page to interactive and dynamic web page.
+- A js engine is a program persent in web browser that Executes javascript code .
+------------------------------------------------
+|             javascript Engine                |
+------------------------------------------------
+|       browsers     |         js engine       |
+------------------------------------------------
+|       chrome       |          V8             |
+|       FireFox      |     Spider Monkey       |
+|       Safari       |     javascript-core     |
+|       Edge         |         Chakra          |
+------------------------------------------------
+
 =========================== differences between var, let, and const in JavaScript
 In JavaScript, let, var, and const are used to declare variables. These keywords
 1. Scope:
@@ -20,7 +34,7 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
     String:- Represents textual data, e.g., "Hello, World!".
     Boolean:- Represents true or false values.
 
-    Undefined:- Represents a variable that has been declared but has not been assigned a value.
+    Undefined:- when a variable is declared but has not been assigned a value.
                 In JavaScript, undefined is a primitive value automatically assigned to variables that have been declared but not yet initialized or assigned a value.
         Type of undefined:- The typeof operator for undefined returns 'undefined'.
 
@@ -40,6 +54,10 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
 
     Function:- A callable object that executes a block of code.
 
+Note :- 
+    - primitive data type can holds only one and single value. Non-primitive data types can holds multiple values (object, array).
+    - primitive data types are immutable, meaning their values one assigned, cannot be changed. But Non-primitive data types are mutable and their values can be changed .
+
 -----------------------------------------------
 1. instanceof operator:-> Checks if an object is an instance of a specific class or constructor function.
     let arr = [];
@@ -50,6 +68,21 @@ In JavaScript, let, var, and const are used to declare variables. These keywords
 3. Array.isArray() method: Specifically checks if an object is an array.
     let arr = [];
     console.log(Array.isArray(arr)); // Output will be: true
+
+=================================================== typeof operator ?
+    - the typeof operator is used to determine the data type of a variable or an expression. It returns a string representing the data type.
+    -------------------------------------------------------
+    |          typeof       |           return            |
+    -------------------------------------------------------
+    |          "Hello"      |           string            |
+    |           42          |           number            |
+    |          true         |           boolean           |
+    |        undefined      |          undefined          |
+    |           null        |           object            |
+    |           {}          |           object            |
+    |           []          |           object            |
+    |        function(){}   |          function           |
+    -------------------------------------------------------
 
 ============================================== Types of object ?
 1. Built-in Objects:
@@ -406,6 +439,10 @@ In JavaScript, you can use the encodeURIComponent() and decodeURIComponent() fun
     console.log(myVar); // Output: undefined
     myVar = 10;
 
+    x = 10;
+    console.log(x);
+    var x;  // 10
+
     b) Hoisting with Functions:
     Function declarations are also hoisted in JavaScript. This means that function declarations are fully hoisted, including both the function name and its body.
 
@@ -591,7 +628,13 @@ methods of promises :->
 
     allSettled(): Accepts an array of Promises and returns a single Promise that resolves after all the Promises have settled (whether fulfilled or rejected), providing an array of objects describing the outcome of each Promise.
 
-// =========================================================== Optional Question ?
+Q. what are client side and server side ?
+    - A client side is a device , application, or softwere component that request and consumes servies or resources from a server.
+    - 
+
+Q. what is the types of variable in js when it is declare without using the Var, let, const keyword ?
+    - var is the implicit type of variable where a variable is declare without var, let, const keyword .
+=========================================================== Optional Question ?
 
 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
 => The NaN property represents a value that is “not a number”
