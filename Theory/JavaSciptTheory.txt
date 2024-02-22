@@ -2,8 +2,9 @@
     what is javascript ? what is  the role of JS Engine ?
     let, var and const - when to use? Difference between each .
     Data Types ? typeof operator ?
-    Arrays :- Initialisation, Traversal, Indexing
     What is Type Conversion?
+    what is the difference between unary, binary, and ternary operators ? 
+    Arrays :- Initialisation, Traversal, Indexing
     Strings :- Initialisation, Traversal, Indexing, Conversions, Substrings, Split
     Object {}, (JSON) :- How to create objects? How to get all keys in object? How to get all value in object? How to loop thru an object? How to add data to object? What is key-value pair?
     Functions :- How to create functions? How to create async functions? How to create arrow functions? How many types of functions ?
@@ -166,6 +167,28 @@ Note :-
     - Implicit coercion
         - also known as type coercion, is the automatic conversion of values from one data type to another data types .
 
+====================== What is the difference between unary, binary, and ternary operators ?
+
+- Unary Operators:
+    - Unary operators work with a single operand.
+    - These operators require only one operand to perform an operation.
+    - Examples of unary operators in JavaScript include ++, --, +, -, and !.
+- Binary Operators:
+    - Binary operators work with two operands.
+    - These operators require two operands to perform an operation.
+    - Examples of binary operators in JavaScript include +, -, *, /, ==, &&, and ||.
+- Ternary Operator:
+    - The ternary operator is the only ternary operator in JavaScript.
+    - It's also known as the conditional operator.
+    - The ternary operator requires three operands to perform an operation.
+    - It's used for conditional expressions and returns one of two values based on whether a condition is true or false.
+    - The syntax of the ternary operator is condition ? expression1 : expression2.
+    - If the condition is true, expression1 is evaluated; otherwise, expression2 is evaluated.
+    Example: x > 0 ? "Positive" : "Non-positive"
+
+Unary operators work with one operand.
+Binary operators work with two operands.
+Ternary operator works with three operands.
 
 ============================================== Types of object ?
 1. Built-in Objects:
