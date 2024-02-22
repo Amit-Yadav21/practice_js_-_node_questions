@@ -101,6 +101,7 @@ Note :-
     |           null        |           object            |
     |           {}          |           object            |
     |           []          |           object            |
+    |           Math        |           Object            |
     |        function(){}   |          function           |
     |           100n        |           bigint            |
     |         Symbol()      |           symbol            |
