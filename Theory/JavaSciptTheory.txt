@@ -173,22 +173,33 @@ Note :-
     - Unary operators work with a single operand.
     - These operators require only one operand to perform an operation.
     - Examples of unary operators in JavaScript include ++, --, +, -, and !.
+        - Unary Plus (+) - Converts its operand into a number. For example, +5.
+        - Unary Negation (-) - Negates its operand. For example, -5.
+        - Increment (++) - Increments its operand by 1. For example, x++.
+        - Decrement (--) - Decrements its operand by 1. For example, x--.
+        - Logical NOT (!) - Returns the logical negation of its operand. For example, !true.
 - Binary Operators:
     - Binary operators work with two operands.
     - These operators require two operands to perform an operation.
     - Examples of binary operators in JavaScript include +, -, *, /, ==, &&, and ||.
+        - Addition (+) - Adds two operands. For example, 5 + 3.
+        - Subtraction (-) - Subtracts the second operand from the first. For example, 5 - 3.
+        - Multiplication (*) - Multiplies two operands. For example, 5 * 3.
+        - Division (/) - Divides the first operand by the second. For example, 6 / 2.
+        - Assignment (=) - Assigns a value to a variable. For example, x = 5.
+        - Equality (==) - Compares two operands for equality. For example, 5 == 5.
+        - Less than (<) - Checks if the first operand is less than the second. For example, 5 < 10.
+        - Logical AND (&&) - Returns true if both operands are true. For example, true && false.
 - Ternary Operator:
     - The ternary operator is the only ternary operator in JavaScript.
     - It's also known as the conditional operator.
+    - It works with three operands.
     - The ternary operator requires three operands to perform an operation.
     - It's used for conditional expressions and returns one of two values based on whether a condition is true or false.
     - The syntax of the ternary operator is condition ? expression1 : expression2.
     - If the condition is true, expression1 is evaluated; otherwise, expression2 is evaluated.
     Example: x > 0 ? "Positive" : "Non-positive"
 
-Unary operators work with one operand.
-Binary operators work with two operands.
-Ternary operator works with three operands.
 
 ============================================== Types of object ?
 1. Built-in Objects:
