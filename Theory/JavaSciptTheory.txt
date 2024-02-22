@@ -1,41 +1,18 @@
 ================================== Javasript Questions ?
     let, var and const - when to use? Difference between each
-    Arrays - Initialisation, Traversal, Indexing
-    Strings - Initialisation, Traversal, Indexing, Conversions, Substrings, Split
-    Object {} (JSON) - How to create objects? How to get all keys in object? How to get all value in object? How to loop thru an object? How to add data to object? What is key-value pair?
-    Functions - How to create functions? How to create async functions? How to create arrow functions?
-    Loops - For, For of, For in, forEach, while - Should have idea on how to use this, when to use this, where to use this.
+    Arrays :- Initialisation, Traversal, Indexing
+    Strings :- Initialisation, Traversal, Indexing, Conversions, Substrings, Split
+    Object {}, (JSON) :- How to create objects? How to get all keys in object? How to get all value in object? How to loop thru an object? How to add data to object? What is key-value pair?
+    Functions :- How to create functions? How to create async functions? How to create arrow functions? How many types of functions ?
+    Loops :- For, For of, For in, forEach, while - Should have idea on how to use this, when to use this, where to use this.
     Array functionalities like : .map, .filter, .reduce etc -  Should have idea on how to use this, when to use this, where to use this.
-    Promises - What is promise? Why/Where do we need this? When does this get returned, examples?
-    Callbacks - Use of this? When is this used? Where to use this?
-    Then Catch - When to use this? Alternatives of this? When do you reach try section? When do you reach catch block? Why do you use 2 then during fetch in your third party api calls (music/movie etc apis)?
-    Async Await - What is it? When to use it? Alternative of this? Can async be used without await? Can await be used without async?
-    Fetch API - Why is fetch API needed? What does it return? When do you need this? Alternatives of this?
-    Try Catch - Why/When do we use it? Why is catch useful?
-    Debugging - When facing any issues, what are the ways in which you can debug it? (Try catch, console log, debugger/breakpoints, error search etc)
-    Backend (Nodejs/ExpressJs/Mongo) :
-    Why is express needed?
-    Different http methods and use of each
-    What is a middleware? How do we use it? Examples of when to use it
-    What is authentication? What is authorisation?
-    What is jwt? How does it work? How to you create and use token?
-    Import/Export Functions
-    What is a request? What is response?
-    How does a request flow from postman thru your node server back to postman?
-    Understanding different status codes, when to use 2xx, 4xx, 5xx etc? meaning and need of mostly used status codes
-    What is a route? How to create route?
-    What is input validation? How do you validate inputs?
-    How do you handle errors? How to debug incase of any issue?
-    You should know how to create any api
-    Mongo db connection - how is connection made?
-    All mongo db operation commands
-    Mongo schema, document, collection and model - What is it? How to write? How to use? Difference between each
-    Idea and use of packages like : jwt, bcrypt and salt, nodemon, formidable, bodyParser, dotenv, axios, fs etc
-    What is package.json file? What can we do using it?
-    How does a request flow inside your node codebase
-    Use of .env file? How to secure sensitive/private variables?
-    Use of JSON.stringify(), JSON.parse()
-    Content type: multipart/formData and application/json mainly
+    Promises :- What is promise? Why/Where do we need this? When does this get returned, examples?
+    Callbacks :- Use of this? When is this used? Where to use this?
+    Then Catch :- When to use this? Alternatives of this? When do you reach try section? When do you reach catch block? Why do you use 2 then during fetch in your third party api calls (music/movie etc apis)?
+    Async Await :- What is it? When to use it? Alternative of this? Can async be used without await? Can await be used without async?
+    Fetch API :- Why is fetch API needed? What does it return? When do you need this? Alternatives of this?
+    Try Catch :- Why/When do we use it? Why is catch useful?
+    Debugging :- When facing any issues, what are the ways in which you can debug it? (Try catch, console log, debugger/breakpoints, error search etc)
 
 
 ========================= what is javascript ? what is  the role of JS Engine ?
