@@ -1,6 +1,9 @@
 ================================== Javasript Questions ?
-    let, var and const - when to use? Difference between each
+    what is javascript ? what is  the role of JS Engine ?
+    let, var and const - when to use? Difference between each .
+    Data Types ? typeof operator ?
     Arrays :- Initialisation, Traversal, Indexing
+    What is Type Conversion?
     Strings :- Initialisation, Traversal, Indexing, Conversions, Substrings, Split
     Object {}, (JSON) :- How to create objects? How to get all keys in object? How to get all value in object? How to loop thru an object? How to add data to object? What is key-value pair?
     Functions :- How to create functions? How to create async functions? How to create arrow functions? How many types of functions ?
