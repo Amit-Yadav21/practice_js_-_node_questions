@@ -16,7 +16,7 @@
     Fetch API :- Why is fetch API needed? What does it return? When do you need this? Alternatives of this?
     Try Catch :- Why/When do we use it? Why is catch useful?
     Debugging :- When facing any issues, what are the ways in which you can debug it? (Try catch, console log, debugger/breakpoints, error search etc)
-
+    what is Operator precedence ?
 
 ========================= what is javascript ? what is  the role of JS Engine ?
 - Js is a progarmming language that is used for converting  static web-page to interactive and dynamic web page.
@@ -717,6 +717,31 @@ Q. what are client side and server side ?
 
 Q. what is the types of variable in js when it is declare without using the Var, let, const keyword ?
     - var is the implicit type of variable where a variable is declare without var, let, const keyword .
+
+============================== what is Operator precedence ?
+    - Operator precedence in JavaScript determines the order in which operators are evaluated when multiple operators are used in a single expression .
+    - operator precedence in JavaScript, from highest to lowest precedence .
+
+    1 Grouping: () - Parentheses are used to explicitly specify the order of operations within an expression.
+    2 Member Access and Computed Member Access: . and [] - These operators are used to access properties of objects.
+    3 Function Call and Constructor Invocation: () and new - Invoking functions or constructors.
+    4 Increment and Decrement: ++ and -- - Incrementing or decrementing variables.
+    5 Logical NOT: ! - Logical NOT operator.
+    6 Unary Plus and Minus: + and - - Unary plus and minus operators.
+    7 Bitwise NOT: ~ - Bitwise NOT operator.
+    8 Multiplication, Division, and Remainder: *, /, % - Multiplication, division, and remainder operators.
+    9 Addition and Subtraction: + and - - Addition and subtraction operators.
+    10 Bitwise Shift Operators: <<, >>, >>> - Bitwise left shift, bitwise right shift, and unsigned right shift operators.
+    11 Relational Operators: <, >, <=, >=, instanceof, and in - Comparison operators and instance checks.
+    12 Equality Operators: ==, ===, !=, !== - Equality and inequality operators.
+    13 Bitwise AND: & - Bitwise AND operator.
+    14 Bitwise XOR: ^ - Bitwise XOR (exclusive OR) operator.
+    15 Bitwise OR: | - Bitwise OR operator.
+    16 Logical AND: && - Logical AND operator.
+    17 Logical OR: || - Logical OR operator.
+    18 Conditional (Ternary) Operator: ? : - Conditional (ternary) operator.
+    19 Assignment Operators: =, +=, -=, *=, /=, %=, <<=, >>=, >>>=, &=, ^=, |= - Assignment operators.
+
 =========================================================== Optional Question ?
 
 What is NaN? What is its type? How can you reliably test if a value is equal to NaN?
