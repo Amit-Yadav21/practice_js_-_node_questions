@@ -4,7 +4,7 @@
     Strings - Initialisation, Traversal, Indexing, Conversions, Substrings, Split
     Object {} (JSON) - How to create objects? How to get all keys in object? How to get all value in object? How to loop thru an object? How to add data to object? What is key-value pair?
     Functions - How to create functions? How to create async functions? How to create arrow functions?
-    Loops - For, forEach, while - Should have idea on how to use this, when to use this, where to use this.
+    Loops - For, For of, For in, forEach, while - Should have idea on how to use this, when to use this, where to use this.
     Array functionalities like : .map, .filter, .reduce etc -  Should have idea on how to use this, when to use this, where to use this.
     Promises - What is promise? Why/Where do we need this? When does this get returned, examples?
     Callbacks - Use of this? When is this used? Where to use this?
@@ -126,10 +126,12 @@ Note :-
     |         Symbol()      |           symbol            |
     -------------------------------------------------------
 
-============================================== Type coercion ?
+================================= What is Type Conversion?
     - Type coercion in JavaScript refers to the automatic conversion of values from one data type to another during operations. 
     - Type coercion can be used during string and number concatination .
-    - Type coercion can   b used while using comparision operator .
+    - Type coercion can be used while using comparision operator .
+    - Type conversion, also known as type casting, refers to the explicit transformation of a value from one data type to another.
+    - In JavaScript, there are two main types of type conversion: implicit coercion and explicit coercion.
 
     Here are the key rules of type coercion
         When a numeric value is concatenated with a string using the + operator, JavaScript coerces the number to a string.
@@ -137,66 +139,51 @@ Note :-
         When comparing values using the == (loose equality) or != (loose inequality) operators, JavaScript performs type coercion to make the values comparable.
         JavaScript has a concept of truthy and falsy values, where certain values are coerced to true or false in a boolean context.
         Falsy values include false, 0, “” (empty string), null, undefined, and NaN. All other values are considered truthy when coerced to a boolean.
-    
-    Here are a few examples of type coercion
-        - Numeric to String Coercion:-
-            var num = 42;
-            var str = "The answer is " + num; // Coercion: number to string
-            console.log(str); // Output: "The answer is 42"
-        - String to Numeric Coercion
-            var str = "42";
-            var num = +str; // Coercion: string to number 
-            console.log(num); // Output: 42
-        - Comparison Coercion
-            console.log(42 == "42"); // Output: true (coercion: string to number)
-
-================================= What is Type Conversion?
-    - Type conversion, also known as type casting, refers to the explicit transformation of a value from one data type to another.
-    - In JavaScript, there are two main types of type conversion: implicit coercion and explicit coercion.
 
     - explicit coercion :-
         In JavaScript, explicit coercion, also known as type casting or type conversion, refers to the process of converting a value from one data type to another explicitly. This is done using built-in functions or operators provided by the language. Here are some common ways to perform explicit coercion in JavaScript:
 
-    Here are a few examples of type conversion
-        - Converting a String to a Number
-            - Number Conversion: You can convert values to numbers using the Number() function or using unary plus (+) operator.
-            var str = "42";
-            var num = Number(str);
-            console.log(num); // Output: 42
-        - Converting a Number to a String . 
-            - String Conversion: You can convert values to strings using the String() function or the .toString() method.
-            var num = 42;
-            var str = String(num);  // "42"
-            let str = num.toString(); // "10"
-        - Converting a Boolean to a String
-            var bool = true;
-            var str = String(bool); // Conversion: boolean to string
-            console.log(str); // Output: "true"
+        Here are a few examples of type conversion
+            - Converting a String to a Number
+                - Number Conversion: You can convert values to numbers using the Number() function or using unary plus (+) operator.
+                var str = "42";
+                var num = +str; // 42 
+                var num = Number(str);  // 42
+            - Converting a Number to a String . 
+                - String Conversion: You can convert values to strings using the String() function or the .toString() method.
+                var num = 42;
+                var str = String(num);  // "42"
+                let str = num.toString(); // "10"
+            - Converting a Boolean to a String
+                var bool = true;
+                var str = String(bool); // Conversion: boolean to string
+                console.log(str); // Output: "true"
 
-        - Integer Conversion
-            - You can use parseInt() function to convert a string to an integer.
-            let str = "123";
-            let num = parseInt(str); // 123
+            - Integer Conversion
+                - You can use parseInt() function to convert a string to an integer.
+                let str = "123";
+                let num = parseInt(str); // 123
 
-        - Floating-Point Conversion
-            - You can use parseFloat() function to convert a string to a floating-point number.
-            let str = "3.14";
-            let num = parseFloat(str); // 3.14
+            - Floating-Point Conversion
+                - You can use parseFloat() function to convert a string to a floating-point number.
+                let str = "3.14";
+                let num = parseFloat(str); // 3.14
 
-        - Boolean Conversion
-            - You can use Boolean() function to convert a value to a boolean.
-            let num = 0;
-            let bool = Boolean(num); // false
+            - Boolean Conversion
+                - You can use Boolean() function to convert a value to a boolean.
+                let num = 0;
+                let bool = Boolean(num); // false
 
-        - Using Template Literals
-            - Template literals implicitly coerce non-string values to strings.
-            let num = 42;
-            let str = `The number is ${num}`; // "The number is 42"
-
-        var ageAsString = "25";
-        var age = Number(ageAsString);
-        var ageNextYear = age + 1;
-        console.log(ageNextYear); // Output: 26
+            - Using Template Literals
+                - Template literals implicitly coerce non-string values to strings.
+                let num = 42;
+                let str = `The number is ${num}`; // "The number is 42"
+            
+            - Comparison Coercion
+                console.log(42 == "42"); // Output: true (coercion: string to number)
+    
+    - Implicit coercion
+        - also known as type coercion, is the automatic conversion of values from one data type to another data types .
 
 
 ============================================== Types of object ?
