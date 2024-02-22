@@ -1,16 +1,17 @@
 // const input = require('readline-sync')
 // const data = input.questionInt('Enter your number -:')
-
-// for (var i = 2; i<data; i++){
-//     if (data%i===0){
-//         var res =`${data} is not a prime number`
-//         break;
-//     }
-//     else{
-//         var res = `${data} is a prime number`
+// let count = 0;
+// for (let i = 1; i <= data; i++) {
+//     if (data % i === 0) {
+//         count++;
 //     }
 // }
-// console.log(res);
+
+// if (count === 2) {
+//     console.log('Prime number');
+// } else {
+//     console.log('Not a prime number');
+// }
 
 // ---------------------------------------------------------------------------------
 // var iput = require('readline-sync');
