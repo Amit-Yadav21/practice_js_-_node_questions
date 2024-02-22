@@ -128,14 +128,24 @@ Note :-
         Here are a few examples of type conversion
             - Converting a String to a Number
                 - Number Conversion: You can convert values to numbers using the Number() function or using unary plus (+) operator.
-                var str = "42";
-                var num = +str; // 42 
-                var num = Number(str);  // 42
+                - When an operation like subtraction (-), multiplication (*), division (/), or modulus (%) is performed, all the values that are not numbers are converted into the number data type.
+                    let w = 10 - '5';   // 5
+                    let x = 10 * '5';   // 50
+                    let y = 10 / '5';   // 2
+                    let z = 10 % '5';   // 0
+                    var str = "42";
+                    var num = +str; // 42 
+                    var num = Number(str);  // 42
             - Converting a Number to a String . 
                 - String Conversion: You can convert values to strings using the String() function or the .toString() method.
-                var num = 42;
-                var str = String(num);  // "42"
-                let str = num.toString(); // "10"
+                - When any string or non-string value is added to a string, it always converts the non-string value to a string implicitly .
+                - In this case, using the + sign with a number and a string, the number is coerced to a string, then the + sign is used for a concatenation operation.
+                    let x = 10 + '20';  // 1020
+                    let y = '20' + 10;  // 2010
+                    let z = true + '10';    // true10
+                    var num = 42;
+                    var str = String(num);  // "42"
+                    let str = num.toString(); // "10"
             - Converting a Boolean to a String
                 var bool = true;
                 var str = String(bool); // Conversion: boolean to string
@@ -156,10 +166,21 @@ Note :-
                 let num = 0;
                 let bool = Boolean(num); // false
 
+            - Boolean to Number
+                - When a Boolean is added to a Number, the Boolean value is converted to a number .
+                let x = true + 2;   // 3
+                let x = false + 2;  // 2
+
             - Using Template Literals
                 - Template literals implicitly coerce non-string values to strings.
                 let num = 42;
                 let str = `The number is ${num}`; // "The number is 42"
+            
+            - The Equality Operator 
+                - This is done by coercing a non-number data type to a number. 
+                let x = (10 == '10');   // true
+                let y = (true == 1);    // true
+                let z = (true == 'true');   // false
             
             - Comparison Coercion
                 console.log(42 == "42"); // Output: true (coercion: string to number)
