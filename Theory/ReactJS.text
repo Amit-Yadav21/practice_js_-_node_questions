@@ -124,6 +124,12 @@ What is the purpose of the "React.Fragment" component in React?
 Note:- In React, the React.Fragment component, often abbreviated as <>...</>, or <React.Fragment>...</React.Fragment>, is used as a wrapper to group multiple elements together without adding an extra DOM node. 
        This is useful when you want to return multiple elements from a component's render method without introducing additional elements into the DOM structure.
 
+What is the purpose of the React.Fragment component in React?
+    a) To group multiple elements without adding extra nodes to the DOM ✅
+    b) To define the structure of a component's Ul
+    c) To define React components
+    d) To insert comments in the rendered output
+
 In React what is the significance of the "displayName" property?
     a) it delines the use of the HTML tag used for rendering the component
     b) It determines the order of rendering components in the component tree
@@ -151,6 +157,12 @@ Note:- In React, you can conditionally render a component based on a certain con
 Example :-
         {condition ? <Component /> : null}
         {condition && <Component />}
+
+How can you conditionally render content in a React component?
+a) By using the if statement within the component's JSX
+b) By using the toggleRender prop
+c) By using the renderif method
+d) By using the ternary operator in the component's JSX ✅
 
 What is the "React Router" used for in a React application?
     a) To manage routing and navigation between components ✅
@@ -378,8 +390,24 @@ How can you conditionally apply CSS classes to a React component?
     d) By using the style attribute with JavaScript expressions
 Note:- In React, you can conditionally apply CSS classes to a component by using JavaScript expressions within the className attribute. 
        Typically, you would use a ternary operator to conditionally determine which CSS classes to apply based on some condition.
+Example:-  <div className={condition ? 'class1' : 'class2'}>Content</div>
 
-<div className={condition ? 'class1' : 'class2'}>Content</div>
+How can you conditionally apply CSS styles in React?
+    a) By using the style attribute with JavaScript expressions ✅
+    b) By using the css attribute with a conditional rendering function
+    c) By using the className attribute with a ternary operator
+    d) By using the class attribute with a conditional statement
+Note:- In React, you can conditionally apply CSS styles by using the style attribute with JavaScript expressions. 
+       You can dynamically generate CSS property-value pairs based on conditions.
+Example:- 
+function MyComponent({ condition }) {
+  return (
+    <div style={{ backgroundColor: condition ? 'green' : 'red' }}>
+      Conditional Styling Example
+    </div>
+  );
+}
+
 
 What is the purpose of the style attribute in React?
     a) To define the structure of a component's UI
@@ -396,3 +424,110 @@ Note:-
     a) By importing a CSS file with transition styles: You can define CSS transitions in a CSS file and import it into your React components.
     b) By using the react-transition-group library: This library provides components like CSSTransition and TransitionGroup that enable you to add CSS transitions to components as they mount and unmount.
     d) By using the transition property in the style attribute: You can apply inline styles to React components and use CSS transitions by defining the transition property within the style attribute
+
+Which method is called immediately after a component is inserted into the DOM in React?
+    a) componentDidMount ✅ 
+    b) render
+    c) componentWillMount
+    d) constructor
+Note :- The componentDidMount method is called immediately after a component is inserted into the DOM in React. 
+        This method is commonly used to perform tasks such as initializing state, fetching data from APIs, or setting up event listeners.
+
+What is the purpose of the componentWillUnmount method in React?
+    a) To perform cleanup before the component is removed from the DOM ✅
+    b) To define the component's structure
+    c) To handle component props
+    d) To update the comportents state
+Note:- The componentWillUnmount method in React is used to perform cleanup operations such as removing event listeners, cancelling network requests, or clearing timeouts before the component is removed from the DOM. 
+       This helps in avoiding memory leaks and ensuring that resources are properly released when the component is unmounted.
+
+What is the purpose of the componentDidUpdate method in React?
+    a) To perform actions after the component is inserted into the DOM
+    b) To unmount the component
+    c) To initialize the component's state
+    d) To handle component updates ✅
+Note:- The componentDidUpdate method in React is invoked immediately after updating occurs. 
+       This method is called after the component's updates have been flushed to the DOM. 
+       It is commonly used to perform actions such as fetching new data based on prop or state changes, updating the DOM in response to prop or state changes, or interacting with other JavaScript libraries.
+
+What is the purpose of the key prop in React?
+    a) To specify the data type of elements in a list
+    b) To provide a unique identifier for each element in a list ✅
+    c) To define the rendering order of elements in a list
+    d) To determine the styling of elements in a list
+Note:- In React, the key prop is used to provide a unique identifier for each element in a list. 
+       When rendering lists of components or elements dynamically, React uses the key prop to efficiently update and reorder elements without re-rendering them unnecessarily.
+
+What is the purpose of the forceUpdate method in React?
+    a) To forcefully re-render a component ✅
+    b) To define the component's structure
+    c) To handle component props
+    d) To update the component's state
+Note:- The forceUpdate() method in React is used to forcefully re-render a component, bypassing the normal lifecycle methods and ignoring any changes in props or state.
+
+How can you create a ref in a functional component in React?
+    a) By using the this.refs property
+    b) By using the ref attribute in the JSX
+    c) By using the createRef method
+    d) By using the useRef hook ✅
+Note:- In a functional component in React, you can create a ref using the useRef hook. 
+       This hook returns a mutable ref object whose current property is initialized to the passed argument (initial value). 
+       You can then attach this ref to a DOM element or any other React component.
+
+What is the purpose of the React.memo function in React?
+    a) To memorize component lifecycle methods
+    b) To memorize the component's render output ✅
+    c) To memorize component props
+    d) To memorize component state
+Note:- The purpose of the React.memo function in React is to memoize the rendered output of a component, similar to how PureComponent works for class components. 
+       It is a higher-order component that you can use to wrap a functional component, and it will only re-render the component if its props have changed.
+
+How can you pass data from a parent component to a child component in React?
+    a) By passing props as arguments to the child component's render method
+    b) By using the props attribute in the parent component's JSX
+    c) By using the this props object in the parent component
+    d) All of the these ✅
+
+How do you include CSS styles in a React component?
+    a) By using inline styles with the style attribute
+    b) By importing an external CSS file
+    c) By using the className attribute
+    d) All of the these ✅
+
+Which of the following is true about React components and HTML elements?
+    a) HTML elements cannot be rendered by React components
+    b) React components can render both HTML elements and other React components ✅
+    c) React components can only render HTML elements
+    d) HTML elements can only be rendered by plain HTML files
+
+What is the purpose of the className attribute in React?
+    a) To add CSS classes to a React component ✅
+    b) To define component props
+    c) To handle component state changes
+    d) To define the class name of a React component
+Note :- The purpose of the className attribute in React is to add CSS classes to a React component. 
+        This allows you to apply styling to the component using CSS.
+
+How can you include an external JavaScript library in a React component?
+    a) By directly linking the library in the HTML file
+    b) By using the require function
+    c) By Importing the library using ES6 module syntax ✅
+    d) By using the script tag in the component's JSX
+Note :- In a React component, you typically include an external JavaScript library by importing it using ES6 module syntax. 
+        This allows you to import specific functions, classes, or objects from the library and use them within your component
+Example :- 
+import ExternalLibrary from 'external-library';
+function MyComponent() {
+  // Use functions, classes, or objects from the imported library
+  return (
+    <div>
+      {/* JSX content */}
+    </div>
+  );
+}
+
+Which CSS property is used to change the color of text in a React component?
+    a) font-color
+    b) text-color
+    c) text-color
+    d) color ✅
