@@ -46,7 +46,7 @@ Note :- React's StrictMode is a component that helps identify and highlight pote
 What is the purpose of the "context" API in React?
     A) To define campotent rendering logic
     B) To handle Asynchrolous tasks in components
-    C) To manage globst state and share data across components ✅
+    C) To manage globle state and share data across components ✅
     D) To provide a way to create components
 Note :- The Context API in React provides a way to share values, such as global state, across the component tree without having to explicitly pass props down manually at every level.
 
@@ -86,7 +86,7 @@ Note :- In React, the Virtual DOM is a lightweight, in-memory representation of 
 How can you prevent a component from rendering in React?
     a) By returning "eulf from the compatient's render method
     b) By collid prop on the component
-    c)  By removing omeonent from the component tree ✅
+    c)  By removing component from the component tree ✅
     d) By seing the hidden CRS property
 Note :- In React, you can prevent a component from rendering by simply removing it from the component tree. 
         This can be done by conditionally rendering the component based on certain conditions, or by not including it in the JSX markup at all. 
