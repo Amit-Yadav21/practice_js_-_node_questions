@@ -5,27 +5,36 @@ What is a React component?
     d) An HTML template used in React applications
 Note :- In React, a component is essentially a JavaScript function (or a class) that returns JSX.
 
+What is the purpose of the React.Component class in React?
+    a) To create class components- ✅
+    b) To create functional components
+    c) To handle component props
+    d) To manage component state
+Note :- In React, the React.Component class is used as a base class to create class components. 
+        Class components are JavaScript classes that extend React.Component and define the behavior and structure of a React component. 
+        They can contain state, lifecycle methods, and other features that functional components cannot. By extending React.Component.
+
 What is the React state?
     a) A method for handling routing in React
     b) A way to define component structure
     c) A global state shared among all components
     d) A local state specific to a component ✅
 
-What is the role of the "children" prop in React components?
-    a) It allows dynamic rendering of content within a component ✅
-    b) It defines the child components of a parent component
-    c) It provides access to the child components
-    d) It represents the parent component's state
-Note :- In React, the children prop is a special prop that allows you to pass components or elements as children to another component.
+How can you update state in React?
+    a) By passing props to the component
+    b) By using the this.setState({}) method ✅
+    c) By directly modifying the state object
+    d) By using the this.state = {} syntax in the component
+Note :- In React, state should not be modified directly. 
+        Instead, you use the setState() method provided by React to update the state of a component. 
+        This method takes an object as an argument, representing the updated state values, and merges it with the current state. 
+        React then re-renders the component with the updated state. 
 
-What is the purpose of the children's prop in React?
-    a) To pass content to a component between its opening and closing tags ✅
-    b) To define the structure of a component's UI
-    c) To handle events in a component
-    d) To access the child components of a component
-Note :- In React, the children prop is a special prop that allows you to pass components, elements, or plain text as children to another component. 
-        This enables dynamic rendering of content within a component, as it allows you to define the structure of the component's output within its parent component. 
-        The content passed as children will be accessible within the component via props.children .
+How do you initialize state in a class component?
+    a) By using the this.state = {} syntax in the constructor ✅
+    b) By using the this setState(()) method
+    c) By using the getinitialState method
+    d) By passing props to the component 
 
 What is the "StrictMode" component in Reactlysed for?
     a) To ensure that components are rendered with high accuracy
@@ -194,33 +203,6 @@ Which lifecycle method is called when a component is first added to the DOM?
 Note:- The componentDidMount lifecycle method is called after a component has been added to the DOM for the first time. 
        It is commonly used to perform actions that require DOM nodes or measurements to be available, such as fetching data from an API or initializing third-party libraries.
 
-How can you pass props to a component in React?
-    a) By using the props attribute in the component's JSX tag ✅
-    b) By directly modifying the props object
-    c) By using the this props object in the component
-    d) By using the setState method
-
-<MyComponent name="John" age={30} />
-       
-Note:- In this example, the name and age props are passed to the MyComponent component. 
-       Inside the MyComponent, you can access these props using this.props.name and this.props.age if it's a class component, or props.name and props.age if it's a functional component.
-
-How can you update state in React?
-    a) By passing props to the component
-    b) By using the this.setState({}) method ✅
-    c) By directly modifying the state object
-    d) By using the this.state = {} syntax in the component
-Note :- In React, state should not be modified directly. 
-        Instead, you use the setState() method provided by React to update the state of a component. 
-        This method takes an object as an argument, representing the updated state values, and merges it with the current state. 
-        React then re-renders the component with the updated state. 
-
-How do you initialize state in a class component?
-    a) By using the this.state = {} syntax in the constructor ✅
-    b) By using the this setState(()) method
-    c) By using the getinitialState method
-    d) By passing props to the component 
-
 
 What is the purpose of the constructor in a React component?
     a) To define the component's state ✅
@@ -311,6 +293,17 @@ Note :- In React, props are immutable, which means they cannot be modified direc
         Attempting to update props directly within a component will not have any effect. 
         React components receive props from their parent components and treat them as read-only.
 
+How can you pass props to a component in React?
+    a) By using the props attribute in the component's JSX tag ✅
+    b) By directly modifying the props object
+    c) By using the this props object in the component
+    d) By using the setState method
+
+<MyComponent name="John" age={30} />
+       
+Note:- In this example, the name and age props are passed to the MyComponent component. 
+       Inside the MyComponent, you can access these props using this.props.name and this.props.age if it's a class component, or props.name and props.age if it's a functional component.
+
 What is the purpose of the "render prop" pattern in React?
     a) To pastinction as a prop to share code
     b) To optimize rendatang performance
@@ -318,6 +311,22 @@ What is the purpose of the "render prop" pattern in React?
     d) to define component rendering logic ✅
 Note :- The "render prop" pattern in React involves passing a function as a prop to a component. 
         This function provides the component with the necessary data or behavior to render its content.
+
+What is the role of the "children" prop in React components?
+    a) It allows dynamic rendering of content within a component ✅
+    b) It defines the child components of a parent component
+    c) It provides access to the child components
+    d) It represents the parent component's state
+Note :- In React, the children prop is a special prop that allows you to pass components or elements as children to another component.
+
+What is the purpose of the children's prop in React?
+    a) To pass content to a component between its opening and closing tags ✅
+    b) To define the structure of a component's UI
+    c) To handle events in a component
+    d) To access the child components of a component
+Note :- In React, the children prop is a special prop that allows you to pass components, elements, or plain text as children to another component. 
+        This enables dynamic rendering of content within a component, as it allows you to define the structure of the component's output within its parent component. 
+        The content passed as children will be accessible within the component via props.children .
 
 Which of the following is true about the prevState argument in the setState method's callback?
     a) To access the event that triggered the state update
@@ -387,12 +396,3 @@ Note:-
     a) By importing a CSS file with transition styles: You can define CSS transitions in a CSS file and import it into your React components.
     b) By using the react-transition-group library: This library provides components like CSSTransition and TransitionGroup that enable you to add CSS transitions to components as they mount and unmount.
     d) By using the transition property in the style attribute: You can apply inline styles to React components and use CSS transitions by defining the transition property within the style attribute
-
-What is the purpose of the React.Component class in React?
-    a) To create class components- ✅
-    b) To create functional components
-    c) To handle component props
-    d) To manage component state
-Note :- In React, the React.Component class is used as a base class to create class components. 
-        Class components are JavaScript classes that extend React.Component and define the behavior and structure of a React component. 
-        They can contain state, lifecycle methods, and other features that functional components cannot. By extending React.Component.
