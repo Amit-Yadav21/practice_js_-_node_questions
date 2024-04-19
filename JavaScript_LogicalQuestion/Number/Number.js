@@ -107,3 +107,50 @@ console.log(isPerfectSquare(25)); // Output: 25 is a perfect square
 
 // const largest = Math.max(num1, num2, num3);
 // console.log("The largest number is " + largest);
+
+// ------------------------------------------------------
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let decimalPart = result - Math.floor(result);
+// console.log(decimalPart);
+
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let convert = result.toString()
+// let afterDecimal = convert[convert.length -1] 
+// console.log(afterDecimal);
+
+// let num1 = 3;
+// let num2 = 2;
+// let result = num1 / num2;
+// let decimalPart = result % 1;
+// console.log(decimalPart);
+
+// last number ?
+// let num =123
+// let last = num.toString().split('').pop();
+// console.log(last);
+
+// let number = 12345;
+// let lastDigit = number % 10;
+// console.log(lastDigit);
+
+// let number = 12345;
+// let lastDigit = parseInt(number.toString().slice(-1));
+// console.log(lastDigit);
+
+// let number = 12345;
+// let lastDigit = Math.abs(number) % 10;
+// console.log(lastDigit);
+
+// function reverse(a) {
+//     let reversedString = Math.abs(a).toString().split('').reverse().join(',');
+
+//     if (a < 0) {
+//         reversedString = '-' + reversedString;
+//     }
+//     console.log(reversedString);
+// }
+// reverse(-123)

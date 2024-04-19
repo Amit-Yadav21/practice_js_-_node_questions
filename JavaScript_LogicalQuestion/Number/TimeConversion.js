@@ -27,48 +27,13 @@ function Time_Convert(num) {
 }
 // console.log(Time_Convert(126)); // Output: 2:6
 
-// let num1 = 3;
-// let num2 = 2;
-// let result = num1 / num2;
-// let decimalPart = result - Math.floor(result);
-// console.log(decimalPart);
 
-// let num1 = 3;
-// let num2 = 2;
-// let result = num1 / num2;
-// let convert = result.toString()
-// let afterDecimal = convert[convert.length -1] 
-// console.log(afterDecimal);
+let current = new Date();
+let today = current.toLocaleDateString('en-IN',{weekday: 'long'});
+let currentMonth = current.toLocaleDateString('en-IN', { month: 'long' });
+// console.log(today);
+// console.log(currentMonth);
 
-// let num1 = 3;
-// let num2 = 2;
-// let result = num1 / num2;
-// let decimalPart = result % 1;
-// console.log(decimalPart);
-
-// last number ?
-// let num =123
-// let last = num.toString().split('').pop();
-// console.log(last);
-
-// let number = 12345;
-// let lastDigit = number % 10;
-// console.log(lastDigit);
-
-// let number = 12345;
-// let lastDigit = parseInt(number.toString().slice(-1));
-// console.log(lastDigit);
-
-// let number = 12345;
-// let lastDigit = Math.abs(number) % 10;
-// console.log(lastDigit);
-
-// function reverse(a) {
-//     let reversedString = Math.abs(a).toString().split('').reverse().join(',');
-
-//     if (a < 0) {
-//         reversedString = '-' + reversedString;
-//     }
-//     console.log(reversedString);
-// }
-// reverse(-123)
+// that gets the current date and time and displays it in a human-readable format (e.g. "Today is Monday, April 12, 2021, and the time is 3:30 PM").
+// let DateRead = `Today is ${date.toLocaleDateString("en-IN",{weekday:"long"})}, ${date.toLocaleDateString("en-IN",{month:"long"})} ${date.getDate()}, ${date.getFullYear()}  and the time is ${date.getHours()}:${date.getMinutes()}`;
+// console.log(DateRead)

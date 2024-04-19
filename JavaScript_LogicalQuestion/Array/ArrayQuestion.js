@@ -20,6 +20,16 @@
 // const arr = [1, 2, 3, 4, 5];
 // console.log(...arr); // Prints: 1 2 3 4 5 (separate elements)
 
+// ---------------------------------------------- matrics ?
+// var arr = [
+//     [1,2,12],
+//     [4,5,6],
+//     [7,8,9]
+// ]
+// var a = (arr[0][0] + arr[1][1] + arr[2][2]);
+// var b = (arr[0][2] + arr[1][1] + arr[2][0]);
+// console.log(a-b);
+
 // -------------------------------------------- if any one value less then 18 . then output false
 const AGEs = [32, 33, 16, 40];
 const Data = AGEs.every(checkAge)

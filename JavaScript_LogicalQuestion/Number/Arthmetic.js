@@ -35,6 +35,47 @@ a = a ^ b;
 // console.log("a =", a); // Output: a = 10
 // console.log("b =", b); // Output: b = 5
 
+// var a=1;
+// var b=2;
+// [a,b]=[b,a]
+// console.log(a,b);
+
+// var a=3;
+// var b=5;
+// let c = a;
+// a=b;
+// b= c;
+// console.log(a,b);
+
+// var a=2;
+// var b=6;
+// a= a+b;
+// b=a-b;
+// a=a-b;
+// console.log(a,b);
+
+// var a=2;
+// var b=6;
+// a=a^b;
+// b=a^b;
+// a=a^b;
+// console.log(a,b);
+
+// var x = 5;
+// var y = 10
+// let z = x
+// x = y;
+// y = z;
+// console.log(x,y);
+
+
+// let a = 4;
+// let b = 9;
+// a = a + b;
+// b = a - b;
+// a = a - b;
+// console.log(a, b);
+
 // ................................. First Digit ?
 // Using arithmetic operations:
 const num = 345678;
